@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2011
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PuppeteerSharpBenchmark", "PuppeteerSharpBenchmark\PuppeteerSharpBenchmark.csproj", "{DCF1BA46-4D6D-4690-9995-6EDB0D64C918}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PuppeteerSharpBenchmark", "PuppeteerSharpBenchmark\PuppeteerSharpBenchmark.csproj", "{DCF1BA46-4D6D-4690-9995-6EDB0D64C918}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PuppeteerSharp", "..\..\puppeteer-sharp\lib\PuppeteerSharp\PuppeteerSharp.csproj", "{953148BE-9DEE-41D1-B8D0-4EEE9F2EB6D1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{DCF1BA46-4D6D-4690-9995-6EDB0D64C918}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DCF1BA46-4D6D-4690-9995-6EDB0D64C918}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DCF1BA46-4D6D-4690-9995-6EDB0D64C918}.Release|Any CPU.Build.0 = Release|Any CPU
+		{953148BE-9DEE-41D1-B8D0-4EEE9F2EB6D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{953148BE-9DEE-41D1-B8D0-4EEE9F2EB6D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{953148BE-9DEE-41D1-B8D0-4EEE9F2EB6D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{953148BE-9DEE-41D1-B8D0-4EEE9F2EB6D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

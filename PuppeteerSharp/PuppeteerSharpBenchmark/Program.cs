@@ -21,7 +21,7 @@ namespace PuppeteerSharpBenchmark
             };
 
 
-            var filesToCreate = 10;
+            var filesToCreate = 3;
             var url = "file:///C:/source/personal/PdfGeneratorsBenchmark/Site/Site.htm";
             var outputFile = Path.Combine(Directory.GetCurrentDirectory(), "output.pdf");
 
@@ -31,11 +31,13 @@ namespace PuppeteerSharpBenchmark
                 {
                     Console.WriteLine("Iteration " + index);
 
-                    using (var page = await browser.NewPageAsync())
+                    var page = await browser.NewPageAsync();
+                    await page.GoToAsync(url);
+                    await page.PdfAsync(outputFile, new PdfOptions
                     {
-                        await page.GoToAsync(url);
-                        await page.PdfAsync(outputFile);
-                    }
+                        PrintBackground = true
+                    });
+                    await page.CloseAsync();
                 }
             }
         }

@@ -12,7 +12,10 @@ const outputFile = __dirname + '/output.pdf';
         console.log("Iteration " + index);
         let page = await browser.newPage();
         await page.goto(url);
-        await page.pdf({path: outputFile});
+        await page.pdf({
+            path: outputFile,
+            printBackground: true
+        });
         await page.close();
     }
 

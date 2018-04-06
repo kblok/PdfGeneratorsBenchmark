@@ -3,10 +3,11 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.0</TargetFramework>
+	<RuntimeIdentifier>win7-x64</RuntimeIdentifier>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="PuppeteerSharp" Version="0.3.1" />
+    <ProjectReference Include="..\..\..\puppeteer-sharp\lib\PuppeteerSharp\PuppeteerSharp.csproj" />
   </ItemGroup>
 
 </Project>
