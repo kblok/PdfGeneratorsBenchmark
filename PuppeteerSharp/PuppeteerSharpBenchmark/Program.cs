@@ -21,7 +21,7 @@ namespace PuppeteerSharpBenchmark
             };
 
 
-            var filesToCreate = 3;
+            var filesToCreate = 10;
             var url = "file:///C:/source/personal/PdfGeneratorsBenchmark/Site/Site.htm";
             var outputFile = Path.Combine(Directory.GetCurrentDirectory(), "output.pdf");
 
